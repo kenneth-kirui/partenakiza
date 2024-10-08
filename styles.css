@@ -196,7 +196,7 @@
   padding: 50px;
   margin: 16px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 50%;
+  width: 100%;
   height: fit-content;
   background-color: #f9f9f9;
 }

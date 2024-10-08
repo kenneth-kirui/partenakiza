@@ -15,10 +15,7 @@
 .header a i {
   color: black;
 }
-.main {
-  width: 90%;
-  margin: 0 auto;
-}
+
 .tunes-header {
   width: 90%;
   margin: 0 auto;
@@ -56,6 +53,22 @@
   font-size: 20px;
   text-align: left;
   line-height: 2rem;
+}
+
+.main {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main .cards-container {
+  width: 90%;
+  height: 100%;
+  margin: 20px auto;
+}
+
+.main .cards-container .card {
+  width: 50%;
+  height: 50%;
 }
 @media screen and (max-width: 768px) {
   .tunes-header {
