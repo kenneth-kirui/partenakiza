@@ -10,7 +10,7 @@ let currentIcon = null;
 
 function fetchData() {
     //http://localhost:8000/tunes/?skip=0&limit=10
-    const endpoint = 'http://134.122.74.239:8003/tunes/?skip=0&limit=10'// to be added
+    const endpoint = 'https://parte.co.ke:8085/tunes/?skip=0&limit=10'// to be added
     
     fetch(endpoint)
         .then(response => {

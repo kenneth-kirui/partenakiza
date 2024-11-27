@@ -9,7 +9,7 @@ let currentAudio = null;
 let currentIcon = null;
 
 function fetchData() {
-    const endpoint = 'http://134.122.74.239:8003/tunes'
+    const endpoint = 'https://parte.co.ke:8085/tunes'
     
     fetch(endpoint)
         .then(response => {
