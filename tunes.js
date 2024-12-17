@@ -9,7 +9,8 @@ let currentAudio = null;
 let currentIcon = null;
 
 function fetchData() {
-    const endpoint = 'https://parte.co.ke:8085/tunes'
+    const endpoint = 'https://parte.co.ke:8085/tunes/'
+    
     
     fetch(endpoint)
         .then(response => {
@@ -86,29 +87,29 @@ function subscribe(code) {
     }
 }
   
-document.addEventListener('DOMContentLoaded', () => {
-    const navbar = document.getElementById('navbar');
-    const links = document.querySelectorAll('.links a');
+// document.addEventListener('DOMContentLoaded', () => {
+//     const navbar = document.getElementById('navbar');
+//     const links = document.querySelectorAll('.links a');
 
-    let lastScrollTop = 0;
+//     let lastScrollTop = 0;
 
-    window.addEventListener('scroll', () => {
-        const currentScrollTop = window.scrollY;
+//     window.addEventListener('scroll', () => {
+//         const currentScrollTop = window.scrollY;
 
-        if (currentScrollTop > lastScrollTop) {
-            navbar.style.backgroundColor = 'rgba(0,0,0,0.5)';
-             links.forEach(link => {
-        link.style.color = 'white'; 
-      });
-        } else {
-            navbar.style.backgroundColor = 'transparent';
-            links.forEach(link => {
-                link.style.color = 'hsl(205, 86%, 17%)';
-            })
+//         if (currentScrollTop > lastScrollTop) {
+//             navbar.style.backgroundColor = 'rgba(0,0,0,0.5)';
+//              links.forEach(link => {
+//         link.style.color = 'white'; 
+//       });
+//         } else {
+//             navbar.style.backgroundColor = 'transparent';
+//             links.forEach(link => {
+//                 link.style.color = 'hsl(205, 86%, 17%)';
+//             })
             
-        }
-        lastScrollTop = 0
-    })
-})
+//         }
+//         lastScrollTop = 0
+//     })
+// })
  
 window.onload = fetchData;

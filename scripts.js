@@ -14,6 +14,7 @@ function fetchData() {
     
     fetch(endpoint)
         .then(response => {
+             console.log('Response status:', response.status); // Log the status
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
