@@ -10,8 +10,6 @@ let currentIcon = null;
 
 function fetchData() {
     const endpoint = 'https://parte.co.ke:8085/tunes/'
-    gi
-    
     fetch(endpoint)
         .then(response => {
             if (!response.ok) {
